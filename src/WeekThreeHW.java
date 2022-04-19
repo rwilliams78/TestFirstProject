@@ -2,14 +2,13 @@ public class WeekThreeHW {
     public static void main(String args[]) {
 
         String firstName = "rebecca williams";
+        String firstLetter = firstName.substring(0,1);
+        String firstLetterUpperCase = firstLetter.toUpperCase();
+        String restOfString = firstName.substring(1);
 
-        System.out.println("First Name : " + firstName);
-
-        String concat = "R".concat("ebecca williams");
-        System.out.println("Capitalized first name :" +concat);
+        System.out.println("First Name : " +firstLetterUpperCase.concat(restOfString));
 
         String fullName = "Rebecca_Williams";
-
         System.out.println("Full Name : "+fullName.replace('_', ' '));
 
     }
